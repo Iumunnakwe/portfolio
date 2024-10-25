@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: black; /* Fallback color */
+    color: white;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    justify-content: flex-start; /* Start from the top */
+    padding: 20px; /* Add some padding */
+}
+
+.link {
+    width: 300px;
+    height: 100px; /* Adjust as needed */
+    margin: 10px;
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.poetry {
+    background-image: url('poetry.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+
+.weather {
+    background-image: url('weather.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+
+.yin-yang {
+    background-image: url('yin-yang.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+
+.archery {
+    background-image: url('archery.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+
+.universe {
+    background-image: url('universe.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+
+.toDo {
+    background-image: url('to-doList.png');
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 400px; /* Adjust as needed */
+}
+

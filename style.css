@@ -1,0 +1,167 @@
+/* Styling for the grid container */
+
+body {
+    /*font-family: "Arial", sans-serif;*/
+    text-align: center;
+    height: 100vh; /* Make sure the body takes the full height */
+    width: 100vw; /* Make sure the body takes the full width */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /*background-color: black;*/
+    background: url('grid2.png'); /* Replace with your galaxy/universe background image */
+    background-size: 133%; /* Or use 'contain' based on your preference */
+    color: white;
+    padding-left: 120px; /* Adjust this value to move it more to the right */
+    font-family: 'Inter', sans-serif; /* Use the chosen font */
+   /* font-weight: 300; /* Light weight */
+}
+
+
+
+.grid-container {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+    grid-template-rows: repeat(4, 1fr); /* Create 4 equal-height rows */
+    grid-template-areas: 
+      "box1 box1 box1 box2"  /* First row */
+      "box3 box4 box6 box7"  /* Second row */
+      "box3 box5 box6 box7"  /* Third row */
+      "box3 box5 box6 box7"; /* Fourth row */
+    gap: 10px; /* Space between grid items */
+    width: 600px; /* Set a fixed width for the grid */
+    height: 600px; /* Set a fixed height to match the width */
+    padding: 10px; /* Padding inside the grid */
+  }
+  
+  /* Styling for individual boxes */
+  .aboutMe, .skills, .connect, .clockB, .color, .projects, .resume {
+    background-color: #181717; /* Light grey background */
+    border: 2px solid white; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+   /* display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: left; /* Align text to the left */
+    font-family: 'Inter', sans-serif; /* Ensure consistency */
+   /* font-weight: 300; /* Ensure consistency */
+    padding: 20px;
+    color: white;
+    font-weight: 400; /* Light font weight */
+    font-family: Satoshi;
+    font-size: 0.875rem; /* Small font size */
+    line-height: 1.35rem; /* Line height */
+    color: white; /* Ensure text color is white */
+
+
+  }
+  
+  /* Assign grid area for each box */
+  .aboutMe {
+    grid-area: box1;
+    margin-bottom: 20px;
+    width: 730px; /* Set a fixed width for the grid (square-shaped) */
+    height: 400px;
+    font-size: 20px; /* Small font size */
+  }
+  #grey-container {
+    font-size: 17px;
+    color: rgb(157, 157, 157);
+}
+  
+  .skills {
+    grid-area: box2; /* Box 2 */
+    width: 300px; /* Set a fixed width for the grid (square-shaped) */
+    height:400px;
+  
+  }
+  
+  .connect {
+    grid-area: box3; /* Box 3 */
+    color: white; /* Ensure text color is white */
+    text-decoration: none; /* Remove underline */
+    font-weight: 300; /* Light font weight */
+    font-family: Satoshi;
+    font-size: 15px; /* Small font size */
+    line-height: 1.35rem; /* Line height */
+  }
+  
+  .clockB {
+    grid-area: box4;
+    width: 200px; /* Set a fixed width for the grid (square-shaped) */
+    height: 200px; /* Box 4 */
+    
+  }
+  
+  .color {
+    grid-area: box5; /* Box 5 */
+    width: 200px; /* Set a fixed width for the grid (square-shaped) */
+    height: 100px; /* Box 4 */
+  
+  }
+  
+  .projects {
+    grid-area: box6; /* Box 6 */
+    text-decoration: none; /* Remove underline from link */
+    display: flex; /* Use flexbox to center content */
+    justify-content: left; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Padding */
+    font-family: Satoshi;
+    font-size: 60px; /* Small font size */
+   
+}
+
+/*.projects:hover {
+    background-color: #ddd; /* Change background on hover */
+    /*cursor: pointer;  Change cursor to pointer 
+}*/
+
+  
+  .resume {
+    grid-area: box7; /* Box 7 */
+    text-decoration: none; /* Remove underline from link */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Padding */
+    font-family: Satoshi;
+    font-size: 60px; /* Small font size */
+  }
+
+  .clock {
+    font-size: 50px; /* Adjust font size */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Space around the clock */
+}
+  
+.color-picker {
+    display: flex;
+    justify-content: center; /* Center the color boxes */
+    margin: 20px; /* Space around the color picker */
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px; /* Space between color boxes */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: 2px solid #fff; /* White border around color boxes */
+    border-radius: 60%; /* Slightly rounded corners */
+}
+strong {
+    font-weight: bold; /* Ensure bold font weight */
+    font-size: 1.2em; /* Optional: Increase font size for emphasis */
+}
+
+ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+}
+
+li {
+    text-align: left; /* Ensure list items are also aligned left */
+    margin-bottom: 5px; /* Optional: Add space between list items */
+}

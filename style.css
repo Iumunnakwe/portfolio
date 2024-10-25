@@ -184,7 +184,7 @@ li {
     }
 
     .aboutMe, .skills, .connect, .clockB, .color, .projects, .resume {
-        width: 70%; /* Full width for mobile view */
+        width: 100%; /* Full width for mobile view */
         height: auto; /* Adjust height automatically */
         margin-bottom: 10px; /* Space between boxes */
     }

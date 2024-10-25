@@ -165,3 +165,27 @@ li {
     text-align: left; /* Ensure list items are also aligned left */
     margin-bottom: 5px; /* Optional: Add space between list items */
 }
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items in one column */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        grid-template-areas: 
+            "box1" 
+            "box2" 
+            "box3" 
+            "box4" 
+            "box5" 
+            "box6" 
+            "box7"; /* Stack all boxes vertically */
+        width: 100%; /* Use full width */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .aboutMe, .skills, .connect, .clockB, .color, .projects, .resume {
+        width: 70%; /* Full width for mobile view */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 10px; /* Space between boxes */
+    }
+}

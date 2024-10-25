@@ -167,7 +167,12 @@ li {
 }
 
 
+/* Media query for mobile view */
 @media (max-width: 768px) {
+    body {
+        padding: 0; /* Remove any padding */
+    }
+
     .grid-container {
         grid-template-columns: 1fr; /* Stack items in one column */
         grid-template-rows: auto; /* Adjust rows automatically */
@@ -179,13 +184,16 @@ li {
             "box5" 
             "box6" 
             "box7"; /* Stack all boxes vertically */
-        width: 100%; /* Use full width */
+        width: 100vw; /* Use full viewport width */
         height: auto; /* Allow height to adjust */
+        padding: 0; /* Remove padding for full width */
+        margin: 0; /* Remove margin */
     }
 
     .aboutMe, .skills, .connect, .clockB, .color, .projects, .resume {
         width: 100%; /* Full width for mobile view */
         height: auto; /* Adjust height automatically */
-        margin-bottom: 10px; /* Space between boxes */
+        margin: 10px 0; /* Space between boxes */
+        box-sizing: border-box; /* Ensure padding is included in width calculations */
     }
 }

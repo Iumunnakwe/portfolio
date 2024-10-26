@@ -52,8 +52,7 @@ body {
     font-size: 0.875rem; /* Small font size */
     line-height: 1.35rem; /* Line height */
     color: white; /* Ensure text color is white */
-    height: auto; /* Adjust height automatically */
-
+  height: 350px; /* Adjust height automatically */
 
   }
   

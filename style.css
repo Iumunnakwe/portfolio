@@ -196,4 +196,13 @@ li {
         margin: 10px 0; /* Space between boxes */
         box-sizing: border-box; /* Ensure padding is included in width calculations */
     }
+    .resume {
+      display: flex; /* Keep flex display */
+      justify-content: flex-start; /* Align content to the left */
+      align-items: center; /* Keep vertical alignment */
+      padding: 20px; /* Keep padding */
+      font-family: Satoshi;
+      font-size: 60px; /* Adjust font size as needed */
+      text-align: left; /* Align text to the left */
+  }
 }

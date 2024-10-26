@@ -73,3 +73,20 @@ body {
     height: 400px; /* Adjust as needed */
 }
 
+@media (max-width: 480px) {
+    .link {
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+        height: 80px; /* Adjust height for mobile */
+    }
+
+    .poetry,
+    .weather,
+    .yin-yang,
+    .archery,
+    .universe,
+    .toDo {
+        height: 150px; /* Adjust height for mobile */
+        width: 80vw;
+    }
+}
+
